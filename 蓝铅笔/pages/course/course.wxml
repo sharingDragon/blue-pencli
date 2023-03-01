@@ -1,0 +1,77 @@
+<view class="course-box">
+  <!-- 登录与logo 与 0元试听 -->
+  <view>
+    <register-logo></register-logo>
+  </view>
+  <!-- 导航序列 -->
+  <view class="navSequence-box">
+  <swiper	display-multiple-items="6" class="navSequences">
+    <swiper-item
+    wx:for="{{navdata}}"
+    wx:key="index"
+    class="navSequenceItem {{selectedItem*1 ===index ?'selectedItems':''}}"
+    bindtap="selectedTop"
+    id="{{index}}"
+    >
+      {{item.name}}
+    </swiper-item>
+  </swiper>
+  </view>
+  <!-- 内容部分 -->
+  <view class="contentPortion-box">
+    <!-- 搜索框 -->
+    <view class="search-box">
+      <image class="images" bindtap="searchTap" src="../../images/search1.png" mode=""/>
+      <input type="text" model:value="{{searchConten}}" bindinput="searchInput" placeholder="绘画教程" />
+    </view>
+    <!-- 横幅图片 -->
+    <view class="banner">
+      <navigator class="banner-img" url=""><image class="banner-image" src="https://ss.lanqb.com/o_1f8mp9vnuchogchc1map1vgr7.png?imageView2/1/w/686/h/274" mode=""/></navigator>
+    </view>
+    <!-- 筛选内容 -->
+    <view class="screen">
+      <view class="screenList"
+        style="height:{{screenUnfold?'600rpx':'220rpx'}}">
+        <text id="-1" 
+        bindtap="selectTop"
+        class="screenItem {{!course_subjects_ids? 'selectscreen' : ''}}"
+        >全部</text>
+        <text wx:for="{{screendata}}" wx:key="id" id="{{item.id}}" 
+        bindtap="selectTop"
+        class="screenItem {{course_subjects_ids*1 === item.id ? 'selectscreen' : ''}}"
+        >{{item.name}}</text>
+      </view>
+      <view class="more" bindtap="moreTop">{{screenUnfold ? "收起":"更多筛选"}} 
+      <image class="arrowsimage {{screenUnfold ? '':'unfold'}}"  src="../../images/arrows1.png" mode=""/> </view>
+    </view>
+    <!-- 内容列表 -->
+    <view class="contentsList">
+      <view class="contentsListItem" wx:for="{{newList}}" wx:key="id" >
+        <!-- 图片 -->
+        <image class="contentsListItem-img" src="https://ss.lanqb.com/{{item.posters.mobile}}?imageView2/1/w/400/h/300" mode=""/>
+        <view class="contentsListItem-title">
+          <!-- 标题 -->
+          <text class="contentsListItemTitles">{{item.title}}</text>
+          <!-- 作者 -->
+          <view class="contentsListItem-profile">
+            <view class="profile-avatar">
+              <image class="profile-avatar-img" src="https://ss.lanqb.com/{{item.profile.avatar}}?imageView2/1/w/400/h/300" mode=""/>
+              <text>{{item.profile.nickname}}</text>
+            </view>
+            <text class="preview_lesson" >共{{item.preview_setting.lessons_count}}节</text>
+          </view>
+          <!-- 多少人学 -->
+          <view class="manyPeople">
+            <text class="study_num">{{item.study_num}}人在学</text>
+            <view class="free-nologin">
+              <view class="origin_rmb_price">￥ {{item.production.origin_rmb_price}} </view>
+              <view class="free">{{item.is_free==="N"? "分享半价学":"登录0元学" }}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  
+</view>

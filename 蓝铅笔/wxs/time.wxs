@@ -1,0 +1,10 @@
+module.exports = function(time){
+  var tim1 ;
+  var tim2
+  if(time) {
+    tim1 = time.split(" ")[0].split("-")
+    tim2 = time.split(" ")[1].split(":")
+    return tim1[1]*1+"月"+tim1[2]+'日 '+" "+tim2[0]+":"+tim2[1]
+  }
+  return time
+}

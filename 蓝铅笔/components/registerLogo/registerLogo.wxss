@@ -1,0 +1,107 @@
+/* logo与 登录 */
+.logo_login {
+  display: flex;
+  width: 100%;
+  height: 86rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10;
+}
+/* logo */
+.logoimg  {
+  position: relative;
+}
+.logoimg .logo-nav image {
+  width: 355rpx;
+  height: 57rpx;
+}
+.logo2023 {
+  width: 110rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: -125rpx;
+  background-image: url("https://assets-cdn.lanqb.com/lanqb/2023/2023year.png");
+  background-size: 100% 100%;
+}
+/* 登录与礼品 */
+.login-present {
+  width: 162rpx;
+  height: 200%;
+  position: relative;
+  /* transform: rotateX(-100rpx); */
+  animation: move 10s infinite linear;
+}
+.present {
+  height: 50%;
+  box-sizing: border-box;
+}
+.present .presentitm {
+  width: 100%;
+  height: 57rpx;
+  background-image: url("https://assets-cdn.lanqb.com/pc/login/regster-reward_3.png");
+  background-size: 100% 100%;
+  margin-top: 55rpx;
+}
+.login-present .login {
+  width: 100%;
+  height: 50%;
+  line-height: 50rpx;
+  text-align: center;
+}
+.login-present .login .login-a {
+  display: inline;
+  margin: 5rpx;
+}
+@keyframes move {
+  0% {
+    top: 0;
+  }
+  47% {
+    top: 0;
+  }
+  50% {
+    top: -86rpx;
+  }
+  97% {
+    top: -86rpx;
+  }
+  100% {
+    top: 0;
+  }
+
+}
+.floor {
+  width: 100%;
+  height: 86rpx;
+}
+/* 0元试听 */
+.audition {
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  z-index: 10;
+}
+.audition image {
+  width: 100%;
+  height: 100%;
+}
+.audition button {
+  width: 145rpx !important;
+  height: 49rpx;
+  box-sizing: border-box;
+  background-image: url("https://assets-cdn.lanqb.com/popupv3/221205/m-tb.png");
+  background-size: 100% 100%;
+  position: absolute;
+  top: 15rpx;
+  right: 20rpx;
+}
+.floor2 {
+  width: 100%;
+  height: 80rpx;
+}

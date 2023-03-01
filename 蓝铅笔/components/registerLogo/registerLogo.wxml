@@ -1,0 +1,26 @@
+  <!-- 登录与logo -->
+  <view class="logo_login">
+    <!-- logo -->
+    <view class="logoimg">
+      <navigator class="logo-nav" url="/pages/index/index">
+        <image src="https://assets-cdn.lanqb.com/lanqb/logo05.png" mode=""/>
+      </navigator>
+      <text class="logo2023"></text>
+    </view>
+    <!-- 登录与礼品 -->
+    <view class="login-present">
+      <!-- 礼品 -->
+      <view class="present"><navigator class="presentitm" url=""></navigator></view>
+      <!-- 登录 -->
+      <view class="login">
+        <navigator class="login-a" url="">注册 </navigator> <navigator class="login-a" url=""> 登录</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="floor"></view>
+  <!-- 0元试听 -->
+  <view class="audition">
+    <image src="https://assets-cdn.lanqb.com/popupv3/221205/m-ht.png" mode=""/>
+    <button></button>
+  </view>
+  <view class="floor2"></view>

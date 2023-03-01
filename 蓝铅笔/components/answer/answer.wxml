@@ -1,0 +1,40 @@
+<!--components/answer/answer.wxml-->
+<view class="answers_box">
+  <!-- 问答 -->
+  <view class="answersItem" 
+  wx:for="{{answers}}" 
+  wx:key="answer_id"
+  >
+    <!-- 名称 -->
+    <view class="answers-name">
+      <image src="{{item.user_avatar}}" mode=""/>
+      <text>{{item.user_nickname}}</text>
+    </view>
+    <!-- 提问 -->
+    <view class="quiz">
+      <view class="quiz1">
+        <text class="quiz1_ico">问</text>
+        <text class="quiz1_text">{{item.title}}</text>
+      </view>
+      <view class="quiz2">
+        <view>{{item.content}}</view>
+        <image src="{{item.works[0]}}" mode=""/>
+      </view>
+    </view>
+    <!-- 回答 -->
+    <view class="answer"> 
+      <!-- 回答人 -->
+      <view class="answer-men">
+        <image src="{{item.answer_user_avatar}}" mode=""/>
+        <text class="answer-men_name">{{item.answer_user_nickname}}</text>
+        <text class="accept">{{item.is_adopt===1 ? '已采纳':"以弃号"}}</text>
+      </view>
+      <!-- 答案 -->
+      <view class="answercontent">
+        {{item.answer_content[0].value}}
+        <text class="particulars">APP内查看</text>
+      </view>
+    </view>
+  </view>
+</view>
+

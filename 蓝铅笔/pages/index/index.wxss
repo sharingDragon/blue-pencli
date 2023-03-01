@@ -1,0 +1,244 @@
+.homePage {
+  background-color: #F4F4F4;
+}
+/* 轮播图 */
+.slideshow image {
+  width: 100%;
+  height: 100%;
+}
+/* 子菜单 */
+.submenu {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 25rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.submenuItem {
+  width: 184rpx;
+  height: 136rpx;
+  margin-bottom: 16rpx;
+  text-align: center;
+}
+.submenuImg {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 0 auto;
+}
+.submenuImg image {
+  width: 100%;
+  height: 100%;
+}
+.submenuName {
+  font-size: 25rpx;
+  color: #222;
+}
+/* 大触直播 */
+/* 名称与更多 */
+.specialist-box {
+  background-color: #fff;
+  padding-bottom: 30rpx;
+  margin-bottom: 20rpx;
+}
+.title-more {
+  display: flex;
+  width: 100%;
+  height: 66rpx;
+  padding: 0 25rpx;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #E6E6E6;
+}
+.title-more .title {
+  font-size: 30rpx;
+}
+.title-more .more {
+  font-size: 25rpx;
+  color: #A4A4A4;
+}
+/* 直播 */
+.specialistStreaming {
+  display: flex;
+  width: 100%;
+  padding: 30rpx;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.liveStreaming {
+  width: 100%;
+  padding: 16rpx 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  box-shadow: 0 0 20rpx #c9c9c9;
+}
+/* 作者 */
+.liveStreaming .author {
+  width: 100%;
+  padding: 5rpx 0;
+  box-sizing: border-box;
+}
+.liveStreaming .author image {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+  vertical-align: bottom;
+}
+.liveStreaming .author text {
+  font-size: 25rpx;
+}
+/* 标题 */
+.streamingTitle {
+  padding-top: 10rpx;
+  margin-bottom: 15rpx;
+}
+.streamingTitle .streamingTitleitem {
+  font-size: 27rpx;
+  font-weight: bold;
+}
+.streamingTitle .streamingTitleitem:hover {
+  color: #E8BA56;
+}
+/* 直播内容 */
+.streamingCenter {
+  width: 650rpx;
+  height: 366rpx;
+  margin-bottom: 10rpx;
+  background-color: #ddd;
+  border-radius: 10rpx;
+}
+
+/* 发布时间 与 点击量 */
+.streaming-release-hits {
+  display: flex;
+  width: 100%;
+  color: #A4A4A4;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 10rpx 0 0;
+}
+/* 直播列表 */
+.liveStreaming.n1 {
+  width: 335rpx;
+  height: 460rpx;
+}
+/* 封面 */
+.liveStreaming.n1 .cover {
+  width: 295rpx;
+  height: 221rpx;
+}
+.liveStreaming.n1 .cover .cover-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.liveStreaming.n1 .cover .cover-img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.liveStreaming.n1 .cover .cover-img text {
+  color: white;
+  background-color: rgba(14, 14, 14, 0.493);
+  font-size: 22rpx;
+  padding: 5rpx 10rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 15rpx;
+  border-radius: 6rpx;
+}
+/* 发布时间 与 点击量  */
+.streaming-release-hits1 {
+  width: 100%;
+  color: #A4A4A4;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  padding: 10rpx 0 0;
+}
+.streaming-release-hits1 .hits {
+  margin-top: 7rpx;
+}
+.streaming-release-hits1 .hits image {
+  width: 26rpx;
+  height: 24rpx;
+  vertical-align: bottom;
+  margin-right: 5rpx;
+}
+/* 热门搜索 */
+.popularCourse_box {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+/* 问答专区  */
+.answerPrefecture {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  margin-bottom: 20rpx;
+}
+/* 素材下载 */
+.matterDownload-box {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 20rpx;
+  margin-bottom: 25rpx;
+}
+/* 底部 */
+.bottom-box {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.asRegards{
+  display: inline-block;
+  font-size: 20rpx;
+  padding: 0 20rpx;
+  color: #A4A4A4;
+  border-right: 1rpx solid #a4a4a4;
+  border-left: 1rpx solid #a4a4a4;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+/* 证书 */
+.certificate {
+  display: flex;
+  width: 100%;
+  padding: 0 30rpx;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+.certificateItem {
+  width: 101rpx;
+  height: 39rpx;
+}
+.certificateItem image {
+  width: 100%;
+  height: 100%;
+}
+.certificateMark {
+  color: #A4A4A4;
+  font-size: 17rpx;
+  margin-bottom: 10rpx;
+}
+.publicSecurity {
+  display: block;
+  margin-bottom: 30rpx;
+}
+.publicSecurity image {
+  width: 21rpx;
+  height: 21rpx;
+  margin-right: 15rpx;
+  vertical-align: bottom;
+}
+.publicSecurity text {
+  font-size: 20rpx;
+  color: #A4A4A4;
+}

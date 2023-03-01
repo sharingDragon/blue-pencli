@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "register-logo":"../../components/registerLogo/registerLogo"
+  }
+}

@@ -1,0 +1,118 @@
+/* components/answer/answer.wxss */
+.answers_box {
+  width: 100%;
+
+}
+.answersItem  {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 30rpx;
+}
+.answers-name {
+  display: flex;
+  align-items: center;
+}
+.answers-name image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+/* 提问 */
+.quiz {
+  width: 100%;
+  padding: 20rpx 0;
+}
+.quiz1 {
+  width: 100%;
+}
+.quiz1_ico {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  color: white;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 10rpx;
+  background-color: #4DA2FF;
+  margin-right: 10rpx;
+}
+.quiz1_text {
+  font-size: 35rpx;
+  color: #1a1b1e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+}
+.quiz2 {
+  display: flex;
+  margin-top: 24rpx;
+  justify-content: space-between;
+}
+.quiz2 view {
+  width: 532.2rpx;
+  height: 130rpx;
+  color: #5b6164;
+  font-size: 30rpx;
+}
+.quiz2 image {
+  width: 130rpx;
+  height: 130rpx;
+  vertical-align: bottom;
+}
+/* 回答 */
+.answer {
+  width: 100%;
+  padding: 28rpx 24rpx;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+/* 回答人 */
+.answer-men {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.answer-men image {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  margin-right: 12rpx;
+  vertical-align: bottom;
+}
+.answer-men_name {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  color: #3f4345;
+}
+.answer-men .accept {
+  display: inline-block;
+  width: 106rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(90deg,#ffed70,#ffd865);
+}
+
+.answercontent {
+  color: #5b6164;
+  font-size: 29rpx;
+  max-height: 80rpx;
+  overflow: hidden;
+  position: relative;
+}
+.particulars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #457eec;
+  background-color: #f7f7f7;
+  padding-left: 8rpx;
+}

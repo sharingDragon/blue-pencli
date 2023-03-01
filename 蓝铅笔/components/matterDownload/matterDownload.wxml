@@ -1,0 +1,13 @@
+<view class="matterdownloads">
+  <view wx:for="{{matter}}" wx:key="id" class="matterdownloads-item">
+    <!-- 图片 -->
+    <view class="matterimg">
+      <image src="https://ss.lanqb.com/{{item.imgCover}}" mode=""/>
+    </view>
+    <!-- 标题与时间 -->
+    <view class="mattertitle-time">
+      <text class="mattertitle">{{item.title}}</text>
+      <text class="mattertime">{{item.created_at}}</text>
+    </view>
+  </view>
+</view>

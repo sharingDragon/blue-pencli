@@ -1,0 +1,40 @@
+.matterdownloads {
+  width: 100%;
+  box-sizing: border-box;
+}
+.matterdownloads-item {
+  display: flex;
+  width: 100%;
+  padding: 20rpx 40rpx 20rpx 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.matterimg {
+  width: 243rpx;
+  height: 136rpx;
+}
+.matterimg image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5rpx;
+}
+/*  */
+.mattertitle-time {
+  width: 420rpx;
+}
+.mattertitle {
+  display: block;
+  font-size: 29rpx;
+  margin-bottom: 22rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.mattertitle-time .mattertime {
+  display: block;
+  height: 84rpx;
+  font-size: 23rpx;
+  color: #a4a4a4;
+}

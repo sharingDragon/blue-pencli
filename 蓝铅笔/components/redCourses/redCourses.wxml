@@ -1,0 +1,8 @@
+<view class="hotCourse_box">
+  <view class="hotCourseItem" wx:key="id" wx:for="{{hotCourseCent}}">
+    <navigator class="hotCourseItemLink" url="">
+      <view class="hotCourseItem-img"><image src="{{'https://ss.lanqb.com/'+item.posters.mobile}}" mode=""/></view>
+      <text class="hotCourseItem-title">{{item.title}}</text>
+    </navigator>
+  </view>
+</view>

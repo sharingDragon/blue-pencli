@@ -1,0 +1,123 @@
+轮播图
+https://m.lanqb.com/api/home/banner?type=m&local_code=10&order=weight&limit=6
+
+
+热门教程
+https://m.lanqb.com/api/home/series
+
+问答专区
+https://m.lanqb.com/api/home/heat/qa-list
+
+弹窗
+https://assets-cdn.lanqb.com/popupv3/230201/m1.png
+
+======================= 教程 ===============
+
+类别 筛选
+https://m.lanqb.com/api/course-group-list
+
+
+https://m.lanqb.com/api/course/video?type=1&page=1&limit=10&course_subjects_ids=122
+https://m.lanqb.com/api/course/video?type=1&page=1&limit=10&course_subjects_ids=43
+最新
+  https://m.lanqb.com/api/course/video?type=1&page=1&limit=10
+  https://m.lanqb.com/api/course/video?type=1&page=2&limit=10
+    搜索
+      https://m.lanqb.com/api/course/video?type=1&page=1&limit=10&title=男
+      https://m.lanqb.com/api/course/video?type=1&page=2&limit=10&title=男
+
+入门
+  https://m.lanqb.com/api/course/video?level=1&page=1&limit=10
+  https://m.lanqb.com/api/course/video?level=1&page=2&limit=10
+      问题： https://m.lanqb.com/api/course/video?level=2,3,4,5&page=1&limit=10
+  搜索
+    https://m.lanqb.com/api/course/video?level=1&page=1&limit=10&title=脚
+
+进阶
+  https://m.lanqb.com/api/course/video?level=2,3,4,5&page=1&limit=10
+  https://m.lanqb.com/api/course/video?level=2,3,4,5&page=2&limit=10
+       问题： https://m.lanqb.com/api/course/video?is_free=Y&page=1&limit=10
+  搜索 
+    https://m.lanqb.com/api/course/video?level=2,3,4,5&page=1&limit=10&title=头
+    https://m.lanqb.com/api/course/video?level=2,3,4,5&page=2&limit=10&title=头
+
+免费
+  https://m.lanqb.com/api/course/video?is_free=Y&page=1&limit=10
+  https://m.lanqb.com/api/course/video?is_free=Y&page=2&limit=10
+    搜索
+      https://m.lanqb.com/api/course/video?is_free=Y&page=1&limit=10&title=人体
+      https://m.lanqb.com/api/course/video?is_free=Y&page=2&limit=10&title=人体
+
+图文
+  https://m.lanqb.com/api/graphic-tutorial?page=1
+  https://m.lanqb.com/api/graphic-tutorial?page=2
+
+兑换
+    最新上传
+      兑换
+      https://m.lanqb.com/api/series?page=1&software=0&free=exchange
+      全部
+      https://m.lanqb.com/api/series?page=1&software=0
+      https://m.lanqb.com/api/series?page=2&software=0
+      免费
+      https://m.lanqb.com/api/series?page=1&software=0&free=Y
+      https://m.lanqb.com/api/series?page=2&software=0&free=Y
+      收费
+      https://m.lanqb.com/api/series?page=1&software=0&free=N
+      https://m.lanqb.com/api/series?page=2&software=0&free=N
+
+    编辑推荐
+      全部
+        https://m.lanqb.com/api/series?page=1&software=0&recommend=1
+      免费
+        https://m.lanqb.com/api/series?page=1&software=0&recommend=1&free=Y
+      ……
+    在本页进行搜索
+    https://m.lanqb.com/api/series?page=1&software=0&keyword=手
+    搜索提示文字 https://m.lanqb.com/api/common/hot-words?code=6&status=1&order=weight
+专题
+  内容
+  https://m.lanqb.com/api/series/subject?limit=10&page=1
+  https://m.lanqb.com/api/series/subject?limit=10&page=2
+
+搜索
+https://m.lanqb.com/api/course/video?level=1&page=1&limit=10&title=人
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

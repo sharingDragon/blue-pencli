@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "register-logo":"../../components/registerLogo/registerLogo",
+    "red-courses":"../../components/redCourses/redCourses",
+    "answer":"../../components/answer/answer",
+    "matter-download":"../../components/matterDownload/matterDownload"
+  }
+}

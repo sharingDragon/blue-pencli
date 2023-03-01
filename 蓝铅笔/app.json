@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/course/course",
+    "pages/networkSchool/networkSchool",
+    "pages/specialist/specialist",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蓝铅笔",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/nav-h01.jpg",
+        "selectedIconPath": "./images/nav-h02.jpg"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "教程",
+        "iconPath": "./images/nav-c01.jpg",
+        "selectedIconPath": "./images/nav-c02.jpg"
+      },
+      {
+        "pagePath": "pages/networkSchool/networkSchool",
+        "text": "网校",
+        "iconPath": "./images/nav-t01.jpg",
+        "selectedIconPath": "./images/nav-t02.jpg"
+      },
+      {
+        "pagePath": "pages/specialist/specialist",
+        "text": "大触",
+        "iconPath": "./images/nav-d01.png",
+        "selectedIconPath": "./images/nav-d02.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "首页",
+        "iconPath": "./images/nav-ucenter01.jpg",
+        "selectedIconPath": "./images/nav-ucenter02.jpg"
+      }
+    ],
+    "color": "#999",
+    "selectedColor":"#000"
+  }
+}

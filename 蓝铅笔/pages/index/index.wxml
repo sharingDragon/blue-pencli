@@ -1,0 +1,171 @@
+<!--index.wxml-->
+<view class="homePage">
+  <!-- 登录与logo 与 0元试听 -->
+  <view>
+    <register-logo></register-logo>
+  </view>
+  
+  <!-- 轮播图 -->
+  <view class="slideshow-box">
+    <swiper
+    class="slideshow"
+    indicator-dots="{{true}}"
+    indicator-active-color="#fff"
+    autoplay="{{true}}"
+    circular="{{true}}"
+    >
+      <swiper-item
+        wx:for="{{slideshowdata}}"
+        wx:key="id"
+        bindtap="connect"
+        id="{{item.url}}"
+      >
+        <image src="{{'https://ss.lanqb.com/'+item.picture}}" mode="scaleToFill"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 子菜单 -->
+  <view class="submenu">
+    <view wx:for="{{applydata}}" class="submenuItem" wx:key="index">
+      <view class="submenuImg">
+        <image src="{{item.img}}" mode=""/>
+      </view>
+      <text class="submenuName">{{item.name}}</text>
+    </view>
+  </view>
+  <!-- 大触直播 -->
+  <view class="specialist-box">
+    <!-- 名称与更多 -->
+    <view class="title-more">
+      <view class="title">大触直播</view>
+      <navigator class="more" url="">查看更多></navigator>
+    </view>
+    <!-- 直播 -->
+    <view class="specialistStreaming"> 
+      <!-- 直播框 -->
+      <view class="liveStreaming">
+        <!-- 作者 -->
+        <view class="author">
+          <image id="{{streamingdata.live[0].profile.id}}" src=" https://ss.lanqb.com/e5249d12-b67b-44bc-942e-fdf661debf7a.JPG?imageView2/1/w/60/h/60" mode=""/>
+          <text>{{streamingdata.live[0].profile.nickname}}</text>
+        </view>
+        <!-- 标题 -->
+        <view class="streamingTitle">
+          <navigator class="streamingTitleitem" url="">{{streamingdata.live[0].title}}</navigator>
+        </view>
+        <!-- 直播内容 -->
+        <view class="streamingCenter">
+          <!-- <video src="blob:https://m.lanqb.com/84fb5b0e-c660-4caa-ac7d-deddf137f91b"></video> -->
+        </view>
+        <!-- 发布时间 与 点击量 -->
+        <view class="streaming-release-hits">
+          <view class="release">时间：{{time(streamingdata.live[0].begin_at)}}</view>
+          <view class="hits">{{streamingdata.live[0].statistic.purchases}}人感兴趣</view>
+        </view>
+      </view>
+      <!-- 直播列表 -->
+      <view class="liveStreaming n1">
+        <!-- 名称与更多 -->
+        <view class="author">
+          <image id="{{streamingdata.live[1].profile.id}}" src="https://ss.lanqb.com/o_1gmij7hi8f2q1tff1hr1qmflei2l.png?imageView2/1/w/360/h/270" mode=""/>
+          <text>{{streamingdata.live[1].profile.nickname}}</text>
+        </view>
+        <!-- 标题 -->
+        <view class="streamingTitle">
+          <navigator class="streamingTitleitem" url="">{{streamingdata.live[1].title}}</navigator>
+        </view>
+        <!-- 封面-->
+        <view class="cover">
+          <navigator class="cover-img" url="">
+            <image src="{{ streamingdata.live[1] &&'https://ss.lanqb.com/'+streamingdata.live[1].cover}}" mode=""/>
+            <text>第{{streamingdata.live[1].periods}}期</text>
+          </navigator>
+        </view>
+        <!-- 发布时间 与 点击量 -->
+        <view class="streaming-release-hits1">
+          <view class="release">时间：{{time(streamingdata.live[1].begin_at)}}</view>
+          <view class="hits"><image src="../../images/attention.png" mode=""/>{{streamingdata.live[1].statistic.purchases}}</view>
+        </view>
+      </view>
+      <view class="liveStreaming n1">
+        <!-- 名称与更多 -->
+        <view class="author">
+          <image id="{{streamingdata.course.data[0].id}}" src="{{streamingdata.course.data[0]&& 'https://ss.lanqb.com/'+streamingdata.course.data[0].user_profile.avatar}}" mode=""/>
+          <text>{{streamingdata.course.data[0].user_profile.nickname}}</text>
+        </view>
+        <!-- 标题 -->
+        <view class="streamingTitle">
+          <navigator class="streamingTitleitem" url="">{{streamingdata.course.data[0].title}}</navigator>
+        </view>
+        <!-- 封面-->
+        <view class="cover">
+          <navigator class="cover-img" url="">
+            <image src="{{streamingdata.course.data[0] &&'https://ss.lanqb.com/'+ streamingdata.course.data[0].posters.app}}" mode=""/>
+            <text>第{{streamingdata.course.data[0].periods}}期</text>
+          </navigator>
+        </view>
+        <!-- 发布时间 与 点击量-->
+        <view class="streaming-release-hits1">
+          <view class="release">时间：{{time(streamingdata.course.data[0].begin_at)}}</view>
+          <view class="hits"><image src="../../images/attention.png" mode=""/>{{streamingdata.course.data[0].statistic.purchases}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 热门搜索 -->
+  <view class="popularCourse_box">
+    <!-- 名称与更多 -->
+    <view class="title-more">
+      <view class="title">热门教程</view>
+      <navigator class="more" url="">查看更多></navigator>
+    </view>
+    <!-- 热门内容 -->
+    <view class="popularCourse">
+      <red-courses hotCourseCent="{{hotspotCourse}}"></red-courses>
+    </view>
+  </view>
+  <!-- 问答专区 -->
+  <view class="answerPrefecture">
+    <!-- 名称与更多 -->
+    <view class="title-more">
+      <view class="title">问答专区</view>
+      <navigator class="more" url="">查看更多></navigator>
+    </view>
+    <!-- 问答 -->
+    <view class="answer_box">
+      <answer answers="{{questionsanswer}}"></answer>
+    </view>
+  </view>
+  <!-- 素材下载 -->
+  <view class="matterDownload-box">
+    <!-- 名称与更多 -->
+    <view class="title-more">
+      <view class="title">素材下载</view>
+      <navigator class="more" url="">查看更多></navigator>
+    </view>
+    <!-- 素材内容 -->
+    <view class="matterContent">
+      <matter-download matter="{{matterdownload}}"></matter-download>
+    </view>
+    
+  </view>
+
+  <!-- 底部 -->
+  <view class="bottom-box">
+    <navigator class="asRegards" url="">关于蓝铅笔</navigator>
+    <!-- 证书 -->
+    <view class="certificate">
+      <navigator url="{{item.link}}" class="certificateItem" wx:for="{{certificatedata}}" wx:key="index" ><image src="{{item.img}}" mode=""/></navigator>
+    </view>
+    <!-- 号 -->
+    <view class="certificateMark"> Copyright © 2022杭州多技教育科技有限公司 浙ICP备11056181号</view>
+    <!-- 公安 -->
+    <view class="publicSecurity">
+      <image src="https://assets-cdn.lanqb.com/image/footer/footer-icon4@2x.png" mode=""/>
+      <text>浙公网安备33010602000717号</text>
+    </view>
+  </view>
+</view>
+
+
+<wxs src="../../wxs/time.wxs" module="time"/>
